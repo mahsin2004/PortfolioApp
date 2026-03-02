@@ -1,0 +1,41 @@
+# Portfolio PWA Task Checklist
+
+## Planning
+- [x] Explore existing Next.js template structure
+- [x] Create implementation plan
+
+## PWA Setup
+- [ ] Install next-pwa dependency
+- [ ] Configure next.config.ts for PWA
+- [ ] Create manifest.json (web app manifest)
+- [ ] Create service worker
+- [ ] Generate PWA icons (various sizes)
+
+## Design System & Global Styles
+- [ ] Update globals.css with portfolio design system (dark theme, gradients, animations)
+- [ ] Update layout.tsx with metadata, PWA meta tags, font setup
+
+## Components
+- [ ] Navbar component (fixed, glassmorphism, mobile hamburger)
+- [ ] Hero section (animated intro, typewriter effect)
+- [ ] About section (profile, bio, personal info)
+- [ ] Skills section (multi-field skills with animated progress bars)
+- [ ] Experience/Timeline section
+- [ ] Projects section (filterable project cards)
+- [ ] Achievements section (awards, certifications, milestones)
+- [ ] Testimonials section
+- [ ] Contact section (form + social links)
+- [ ] Footer component
+
+## Pages & Routing
+- [ ] Main page.tsx assembling all sections
+- [ ] Update app/layout.tsx
+
+## Assets & Content
+- [ ] Generate hero/profile image
+- [ ] Generate project preview images
+
+## Verification
+- [ ] Run dev server and verify all sections render
+- [ ] Verify PWA manifest and service worker
+- [ ] Verify responsive design
