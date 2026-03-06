@@ -21,11 +21,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Alex Dev – Full-Stack Developer Portfolio",
+  title: "MMM – Engineer",
   description:
-    "Full-Stack Developer specializing in React, Next.js, Node.js, Cloud Architecture, and Mobile Development. Explore my projects, skills, and achievements.",
+    "Full-Stack Developer specializing in javascript, typescript, express, nestjs, mongodb, mongoose, React, Next.js, Node.js, Cloud Architecture, and Mobile Development. Explore my projects, skills, and achievements.",
   keywords: [
+    "Engineer",
     "Full-Stack Developer",
+    "Application Developer",
+    "Frontend Developer",
+    "Backend Developer",
     "React",
     "Next.js",
     "Node.js",
@@ -33,8 +37,8 @@ export const metadata: Metadata = {
     "Portfolio",
     "Web Developer",
   ],
-  authors: [{ name: "Alex Dev" }],
-  creator: "Alex Dev",
+  authors: [{ name: "Md Mahsin Mia" }],
+  creator: "Md Mahsin Mia",
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -46,18 +50,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://alexdev.portfolio",
-    title: "Alex Dev – Full-Stack Developer Portfolio",
+    url: "https://mdmahsinmia.portfolio",
+    title: "Md Mahsin Mia – Engineer",
     description:
-      "Full-Stack Developer specializing in React, Next.js, Node.js, Cloud Architecture, and Mobile Development.",
-    siteName: "Alex Dev Portfolio",
+      "Full-Stack Developer specializing in javascript, typescript, express, nestjs, mongodb, mongoose, React, Next.js, Node.js, Cloud Architecture, and Application Development.",
+    siteName: "Md Mahsin Mia",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Dev – Full-Stack Developer Portfolio",
+    title: "Md Mahsin Mia – Engineer",
     description:
-      "Full-Stack Developer specializing in React, Next.js, Node.js, Cloud Architecture, and Mobile Development.",
-    creator: "@alexdev",
+      "Full-Stack Developer specializing in javascript, typescript, express, nestjs, mongodb, mongoose, React, Next.js, Node.js, Cloud Architecture, and Application Development.",
+    creator: "@mahsin2004",
   },
   robots: {
     index: true,

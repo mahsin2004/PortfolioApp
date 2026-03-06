@@ -3,24 +3,24 @@
 // ============================================
 
 export const personalInfo = {
-    name: "Alex Dev",
-    shortName: "Alex",
+    name: "Md Mahsin Mia",
+    shortName: "Mahsin",
     title: "Full-Stack Developer",
     roles: [
         "Full-Stack Developer",
-        "UI/UX Engineer",
+        "Software Engineer",
         "Cloud Architect",
         "Mobile Developer",
         "Open Source Contributor",
     ],
     bio: "I'm a passionate full-stack developer with 5+ years of experience building scalable web applications, mobile apps, and cloud-native solutions. I love turning complex problems into elegant, user-friendly experiences.",
-    location: "San Francisco, CA",
-    email: "alex@alexdev.portfolio",
-    phone: "+1 (555) 123-4567",
+    location: "Dhaka, Bangladesh",
+    email: "mdmahsinmia@gmail.com",
+    phone: "+880 1741156408",
     availability: "Open to opportunities",
-    github: "https://github.com/alexdev",
-    linkedin: "https://linkedin.com/in/alexdev",
-    twitter: "https://twitter.com/alexdev",
+    github: "https://github.com/mahsin2004",
+    linkedin: "https://linkedin.com/in/md-mahsin-mia",
+    twitter: "https://twitter.com/mahsin2004",
     cvUrl: "/cv.pdf",
     stats: [
         { label: "Years Experience", value: "5+", icon: "Calendar" },

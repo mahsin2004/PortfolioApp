@@ -67,7 +67,7 @@ export default function LoadingScreen() {
           <span className="ld-name-first">M</span>
           <span className="ld-name-last">M</span>
         </h1>
-        <p className="ld-tagline">Full-Stack Developer</p>
+        <p className="ld-tagline">Learn, Understand, Implement</p>
 
         {/* progress bar */}
         <div className="ld-bar-wrap">
