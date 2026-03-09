@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "হোম",
+    "about": "পরিচিতি",
+    "skills": "দক্ষতা",
+    "experience": "অভিজ্ঞতা",
+    "projects": "প্রজেক্ট",
+    "achievements": "অর্জন",
+    "contact": "যোগাযোগ"
+  },
+  "theme": {
+    "dark": "ডার্ক",
+    "light": "লাইট"
+  },
+  "lang": {
+    "en": "EN",
+    "bn": "বাং"
+  }
+}

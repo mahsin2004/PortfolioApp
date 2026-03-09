@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
+import RootLayoutWraps from "@/components/Layout/RootLayoutWraps";
+import { AppProviders } from "@/components/Provider/AppProviders";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,7 +23,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "MMM – Engineer",
+  title: "M Engineer",
   description:
     "Full-Stack Developer specializing in javascript, typescript, express, nestjs, mongodb, mongoose, React, Next.js, Node.js, Cloud Architecture, and Mobile Development. Explore my projects, skills, and achievements.",
   keywords: [
@@ -51,14 +53,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mdmahsinmia.portfolio",
-    title: "Md Mahsin Mia – Engineer",
+    title: "Md Mahsin Mia",
     description:
       "Full-Stack Developer specializing in javascript, typescript, express, nestjs, mongodb, mongoose, React, Next.js, Node.js, Cloud Architecture, and Application Development.",
     siteName: "Md Mahsin Mia",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Md Mahsin Mia – Engineer",
+    title: "Md Mahsin Mia",
     description:
       "Full-Stack Developer specializing in javascript, typescript, express, nestjs, mongodb, mongoose, React, Next.js, Node.js, Cloud Architecture, and Application Development.",
     creator: "@mahsin2004",
@@ -75,11 +77,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${inter.variable} ${firaCode.variable} antialiased`}
-      >
-        {children}
+    // suppressHydrationWarning prevents React mismatch warnings
+    // caused by next-themes injecting the theme class server vs client
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${firaCode.variable} antialiased`}>
+        <AppProviders>
+          <RootLayoutWraps>{children}</RootLayoutWraps>
+        </AppProviders>
       </body>
     </html>
   );

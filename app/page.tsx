@@ -1,15 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Achievements from "@/components/Achievements";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Hero from "@/components/HomeCompoents/Hero";
+import About from "@/components/HomeCompoents/About";
+import Skills from "@/components/HomeCompoents/Skills";
+import Experience from "@/components/HomeCompoents/Experience";
+import Projects from "@/components/HomeCompoents/Projects";
+import Achievements from "@/components/HomeCompoents/Achievements";
+import Testimonials from "@/components/HomeCompoents/Testimonials";
+import Contact from "@/components/HomeCompoents/Contact";
 import LoadingScreen from "@/components/Loading/LoadingScreen";
 
 export default function Home() {
@@ -21,23 +19,19 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <>
       {isLoading ? (
         <LoadingScreen />
-      ) : (
-        <>
-          <Navbar />
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Achievements />
-          <Testimonials />
-          <Contact />
-          <Footer />
-        </>
-      )}
-    </main>
+      ) : (<>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Achievements />
+        <Testimonials />
+        <Contact />
+      </>
+      )}</>
   );
 }

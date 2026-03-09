@@ -62,11 +62,11 @@ export default function LoadingScreen() {
         </div>
 
         {/* name */}
-        <h1 className="ld-name">
+        {/* <h1 className="ld-name">
           <span className="ld-name-last">M</span>
           <span className="ld-name-first">M</span>
           <span className="ld-name-last">M</span>
-        </h1>
+        </h1> */}
         <p className="ld-tagline">Learn, Understand, Implement</p>
 
         {/* progress bar */}
