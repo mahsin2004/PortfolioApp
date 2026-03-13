@@ -8,12 +8,12 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "#home", label: "Home", labelBn: "হোম", icon: "⌂" },
-  { href: "#about", label: "About", labelBn: "পরিচিতি", icon: "◎" },
-  { href: "#skills", label: "Skills", labelBn: "দক্ষতা", icon: "◈" },
-  { href: "#experience", label: "Experience", labelBn: "অভিজ্ঞতা", icon: "◷" },
-  { href: "#projects", label: "Projects", labelBn: "প্রজেক্ট", icon: "⬡" },
-  { href: "#achievements", label: "Achievements", labelBn: "অর্জন", icon: "◆" },
-  { href: "#contact", label: "Contact", labelBn: "যোগাযোগ", icon: "◉" },
+  // { href: "#about", label: "About", labelBn: "পরিচিতি", icon: "◎" },
+  // { href: "#skills", label: "Skills", labelBn: "দক্ষতা", icon: "◈" },
+  // { href: "#experience", label: "Experience", labelBn: "অভিজ্ঞতা", icon: "◷" },
+  // { href: "#projects", label: "Projects", labelBn: "প্রজেক্ট", icon: "⬡" },
+  // { href: "#achievements", label: "Achievements", labelBn: "অর্জন", icon: "◆" },
+  // { href: "#contact", label: "Contact", labelBn: "যোগাযোগ", icon: "◉" },
 ];
 
 const socialLinks = [
@@ -785,7 +785,7 @@ export default function Navbar() {
           </button>
 
           {/* ── Desktop Nav Links ── */}
-          <div className="hidden-mobile" style={{ display: "flex", gap: "0.15rem", alignItems: "center", flex: 1, justifyContent: "center" }}>
+          <div className="hidden-mobile" style={{ display: "flex", gap: "0.15rem", alignItems: "center", flex: 1, justifyContent: "start" }}>
             {navLinks.map((link) => {
               const isActive = activeSection === link.href.replace("#", "");
               return (

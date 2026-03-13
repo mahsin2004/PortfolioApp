@@ -29,7 +29,14 @@ const nextConfig: NextConfig = {
   images: {
     domains: [],
   },
+  // pdfjs-dist and mammoth must run as native Node.js modules —
+  // excluding them from bundling prevents worker/filesystem conflicts.
+  // pdf-parse has been removed in favour of pdfjs-dist.
+  // serverExternalPackages: ["pdfjs-dist", "mammoth"],
+  // webpack: (config) => {
+  //   config.resolve.alias.pdfjs = false;
+  //   return config;
+  // },
 };
 
 export default withNextIntl(withPWA(nextConfig));
-
